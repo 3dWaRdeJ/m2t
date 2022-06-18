@@ -1,0 +1,36 @@
+<?php
+
+namespace Training\TestOM\Model;
+
+class Test
+{
+    private $_manager;
+    private $_arrayList;
+    private $_name;
+    private $_number;
+
+    public function __construct(
+        ManagerInterface $manager,
+        $name,
+        int $number,
+        array $arrayList
+    ) {
+        $this->_manager = $manager;
+        $this->_name = $name;
+        $this->_number = $number;
+        $this->_arrayList = $arrayList;
+    }
+
+    public function log(): string
+    {
+        return '<pre>'
+            . print_r(get_class($this->_manager), true)
+            . '<br>'
+            . print_r($this->_name, true)
+            . '<br>'
+            . print_r($this->_number, true)
+            . '<br>'
+            . print_r($this->_arrayList, true)
+            . '</pre>';
+    }
+}
