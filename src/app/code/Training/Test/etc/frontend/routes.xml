@@ -8,8 +8,8 @@
 <!--        <route id="cms">-->
 <!--            <module name="Training_Test" before="Magento_Cms"/>-->
 <!--        </route>-->
-        <route id="catalog" >
-            <module name="Training_Test" before="Magento_Catalog"/>
-        </route>
+<!--        <route id="catalog" >-->
+<!--            <module name="Training_Test" before="Magento_Catalog"/>-->
+<!--        </route>-->
     </router>
 </config>
