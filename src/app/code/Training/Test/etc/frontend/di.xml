@@ -15,4 +15,9 @@
         <plugin name="product-view-description-plugin"
                 type="Training\Test\Plugin\Block\Product\View\Description" sortOrder="10"/>
     </type>
+    <type name="Magento\Catalog\Block\Product\View\Attributes">
+        <plugin name="product-view-attributes-plugin"
+                type="Training\Test\Plugin\Block\Product\View\Attributes"
+        />
+    </type>
 </config>
